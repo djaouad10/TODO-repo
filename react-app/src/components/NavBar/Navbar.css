@@ -1,0 +1,156 @@
+@keyframes logoAnimation {
+  from {
+    transform: translateX(-300px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes menuAnimation {
+  from {
+    transform: translateX(300px);
+  }
+
+  to {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes colorChange {
+  0%,
+  100% {
+    background-color: cornflowerblue;
+  }
+
+  25%,
+  75% {
+    background-color: rgb(55, 101, 186);
+  }
+
+  50% {
+    background-color: rgb(27, 76, 167);
+  }
+}
+
+.container {
+  animation: colorChange 10s infinite;
+  padding: 10px 15px;
+  width: 100%;
+  display: flex;
+  background-color: cornflowerblue;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  z-index: 999;
+  border-bottom: 1px solid white;
+}
+
+.logo {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+}
+
+.logoAnimation {
+  animation: logoAnimation 0.6s ease-in both;
+}
+
+.logo-icon {
+  font-size: 5rem;
+  color: white;
+  cursor: pointer;
+}
+
+.links {
+  width: 55%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.links ul {
+  animation: menuAnimation 0.6s ease-in both;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.links ul li a {
+  font-size: 1.3rem;
+  color: cornflowerblue;
+  background-color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 30px;
+  border: 2px solid white;
+  font-weight: bold;
+  margin: 0 0.5em;
+  transition: all 0.3s;
+}
+
+.links ul li a:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+.mobile-links ul li a:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+.menu {
+  display: none;
+  animation: menuAnimation 0.6s ease-in both;
+}
+
+.mobile-links {
+  animation: colorChange 10s infinite, menuAnimation 0.6s ease-in-out both;
+  padding-top: 100px;
+  background-color: cornflowerblue;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  width: 40vw;
+  height: 100vh;
+  display: none;
+}
+
+.mobile-links ul {
+  width: 100%;
+  height: 40%;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mobile-links ul a {
+  font-size: 1.3rem;
+  color: cornflowerblue;
+  background-color: white;
+  padding: 0.4em 0.8em;
+  border-radius: 30px;
+  font-weight: bold;
+  margin: 0 0.5em;
+  transition: all 0.3s;
+  border: 2px solid white;
+}
+
+@media screen and (max-width: 900px) {
+  .links {
+    display: none;
+  }
+  .menu {
+    display: inline-block;
+    width: 15%;
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  }
+  .active {
+    display: inline-block;
+  }
+}

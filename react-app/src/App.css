@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --purple-bg: rgb(179, 84, 179);
+  --red-bg: rgb(201, 18, 18);
+  --green-bg: rgb(43, 202, 43);
+  --blue-bg: rgb(62, 114, 210);
+  --border-radius: 20px;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(198, 226, 238);
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}

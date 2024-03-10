@@ -1,0 +1,58 @@
+.form {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid gainsboro;
+  box-shadow: 1px 1px 5px 2px rgba(0, 0, 0, 0.3);
+  margin: 20px 0;
+}
+
+.input {
+  width: 80%;
+  height: 40px;
+  margin: 20px 0px;
+  font-size: 1.3rem;
+  padding: 5px 10px;
+  border: none;
+  border-bottom: 1px solid grey;
+}
+
+.Buttons-container {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0;
+}
+
+.Buttons-container button {
+  width: 130px;
+  height: 40px;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border: 2px solid white;
+  border-radius: 10px;
+  box-shadow: 1px 3px 5px 2px rgba(0, 0, 0, 0.5);
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+.Buttons-container .nextStep {
+  background-color: rgb(201, 26, 55);
+}
+
+.Buttons-container .PrevStep {
+  background-color: rgb(36, 177, 202);
+}

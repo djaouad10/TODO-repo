@@ -1,0 +1,93 @@
+/* SARED STYLES */
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+.nav-container,
+.todos-container {
+  border-radius: var(--border-radius);
+}
+
+/*------------------------------*/
+
+.main-container {
+  height: 450px;
+  width: 400px;
+  position: relative;
+  justify-content: space-between;
+}
+
+.nav-container {
+  background-color: var(--purple-bg);
+  width: 100%;
+  height: 13%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3rem;
+  color: white;
+}
+
+.todos-container {
+  background-color: white;
+  width: 100%;
+  height: 80%;
+  padding: 2rem 2rem 3rem 2rem;
+}
+
+.new-task {
+  position: absolute;
+  bottom: -25px;
+  width: 10em;
+  height: 3em;
+  border: none;
+  border-radius: 50px;
+  background-color: var(--purple-bg);
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.new-task-link {
+  color: white;
+}
+
+.single-todo {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.todo-text {
+  padding: 0.5em;
+  width: 80%;
+  overflow-wrap: break-word;
+}
+
+.todo-btns {
+  width: 20%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.delete-todo {
+  font-size: 1.3rem;
+  color: var(--red-bg);
+  cursor: pointer;
+}
+
+.done-todo {
+  font-size: 1.5rem;
+  color: var(--green-bg);
+  cursor: pointer;
+}
